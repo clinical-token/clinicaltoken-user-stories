@@ -1,7 +1,7 @@
-# Clinical Token Stories
+# Clinical Token User Stories
 
 Public clinic and clinician narratives at
-[`stories.clinicaltoken.com`](https://stories.clinicaltoken.com).
+[`userstories.clinicaltoken.com`](https://userstories.clinicaltoken.com).
 
 Separate from:
 
@@ -13,8 +13,8 @@ Separate from:
 
 | Path | Purpose |
 | --- | --- |
-| `/` | Stories hub |
-| `/stories/<slug>/` | One user story writeup |
+| `/` | User stories hub |
+| `/user-stories/<slug>/` | One user story writeup |
 
 ## Local
 
@@ -26,9 +26,9 @@ npx serve .
 
 ## Deploy (Vercel)
 
-1. Import `clinical-token/clinicaltoken-stories` in Vercel (same GitHub org as www / lab / pitchdeck).
+1. Import `clinical-token/clinicaltoken-user-stories` in Vercel (same GitHub org as www / lab / pitchdeck).
 2. Framework preset: **Other** (static).
-3. Attach domain `stories.clinicaltoken.com` (DNS via Cloudflare → Vercel).
+3. Attach domain `userstories.clinicaltoken.com` (DNS via Cloudflare → Vercel).
 4. Production branch: `main`.
 
 ## Push (this Mac)
