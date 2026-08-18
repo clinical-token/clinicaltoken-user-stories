@@ -215,12 +215,27 @@ a:hover { text-decoration: underline; }
   margin: 0 0 12px;
 }
 
-.article .read-time {
+.article .byline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
   font-size: 13px !important;
   font-weight: 500 !important;
   color: var(--muted) !important;
-  margin: -4px 0 14px !important;
+  margin: -4px 0 28px !important;
   letter-spacing: 0.02em;
+}
+
+.article .byline-sep {
+  opacity: 0.55;
+}
+
+.article .read-time {
+  margin: 0 !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  color: inherit !important;
 }
 
 .article h1 {
