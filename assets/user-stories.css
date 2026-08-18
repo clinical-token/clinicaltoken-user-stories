@@ -140,6 +140,10 @@ a:hover { text-decoration: underline; }
   color: var(--blue);
 }
 
+.card-soon {
+  opacity: 0.78;
+}
+
 .foot {
   margin-top: 56px;
   color: var(--muted);
@@ -279,6 +283,27 @@ a:hover { text-decoration: underline; }
   font-size: 17px;
   font-weight: 700;
   margin: 22px 0 8px;
+}
+
+.story-figure {
+  margin: 20px 0 24px;
+}
+
+.story-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.story-figure figcaption {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--muted);
+  max-width: 56ch;
 }
 
 .article p,
