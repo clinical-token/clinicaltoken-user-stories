@@ -6,7 +6,7 @@
   <title>OPK downward counts and NeckCare Butterfly scores · Clinical Token User Stories</title>
   <meta
     name="description"
-    content="How agentic AI helped a neuro-optometry clinic inventory multimodal data, link Cognuro OPK with NeckCare Butterfly scores, and prepare de-identified evidence for peer discussion."
+    content="How agentic AI helped a neuro-optometry clinic integrate Cognuro OPK and NeckCare Butterfly modalities, surface a cross-modal correlation, and prepare de-identified evidence for peer discussion."
   />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,6 +24,7 @@
       <span>Clinical Token User Stories</span>
     </a>
     <nav class="toc-jump">
+      <a href="#problem">Problem</a>
       <a href="#users">Users</a>
       <a href="#modalities">Modalities</a>
       <a href="#agents">Agents</a>
@@ -39,12 +40,64 @@
     <p class="lede">
       At a neuro-optometry and vestibular performance clinic, clinicians already
       captured rich eye-movement and cervical sensorimotor data. What they lacked
-      was a practical way to inventory that archive, project different
-      modalities into one analysis space, and surface correlations that matter
-      for care. Clinical Token agents did that work with clinician approval at
-      each step, then set up de-identified evidence for peer discussion on the
-      Evidence Exchange.
+      was integration across modalities: Cognuro VNG/OPK and NeckCare cervical
+      measures lived in separate workflows and systems, so teams rarely got an
+      integrated signal for clinical reasoning. Clinical Token agents connected
+      those modalities with clinician approval at each step, then prepared
+      de-identified evidence for peer discussion on the Evidence Exchange.
     </p>
+
+    <section id="problem">
+      <h2>The problem: data everywhere, synthesis nowhere</h2>
+      <p class="problem-lede">
+        Modalities live in separate workflows, systems, and clinical mindsets.
+      </p>
+      <p>
+        Clinical data remains fragmented across scribe tools, chart systems,
+        EHRs, practice management platforms, and other point solutions, rarely
+        connected when teams need integrated signal for real-time clinical
+        reasoning. Clinics need a unified operational layer, not another locked
+        silo.
+      </p>
+
+      <figure class="frag-figure" aria-label="Fragmented clinical modalities">
+        <div class="frag-hub">
+          <div class="frag-center">
+            <span class="frag-warn" aria-hidden="true">!</span>
+            <b>Fragmented<br />data</b>
+          </div>
+          <ul class="frag-grid">
+            <li>MRI imaging</li>
+            <li>VNG / oculomotor</li>
+            <li>Labs &amp; microbiology</li>
+            <li>Symptom questionnaires</li>
+            <li>fNIRS hemodynamics</li>
+            <li>Clinical notes</li>
+            <li>Gait &amp; movement video</li>
+            <li>Rehab metrics</li>
+          </ul>
+        </div>
+        <figcaption>
+          Same idea as the Clinical Token pitch deck problem slide: each modality
+          holds a piece of the patient story, but without synthesis the clinic
+          cannot reason across them.
+        </figcaption>
+      </figure>
+
+      <figure class="profile-figure">
+        <img
+          src="/assets/figures/patient_profile_pixel_perfect.svg"
+          width="720"
+          height="560"
+          alt="Multimodal clinical inputs converging into an AI-native patient profile"
+        />
+        <figcaption>
+          The intended direction: multimodal health data becomes AI-native
+          intelligence when modalities are connected, not left archived in
+          isolation.
+        </figcaption>
+      </figure>
+    </section>
 
     <section id="users">
       <h2>Who this story is about</h2>
