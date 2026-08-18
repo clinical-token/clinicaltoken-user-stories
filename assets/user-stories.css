@@ -250,6 +250,7 @@ a:hover { text-decoration: underline; }
 
 .article h2 .title-accent {
   color: var(--blue-bright);
+  font-size: 0.6em;
 }
 
 .article h3 {
