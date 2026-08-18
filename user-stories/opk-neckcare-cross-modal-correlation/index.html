@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Downward Eye Movement Count in Optokinetic (OPK) Test and NeckCare Butterfly scores · Clinical Token User Stories</title>
+  <title>Downward eye movement count in optokinetic (OPK) test and NeckCare Butterfly scores · Clinical Token User Stories</title>
   <meta
     name="description"
     content="How agentic AI helped a neuro-optometry clinic integrate Cognuro OPK and NeckCare Butterfly modalities, surface a cross-modal correlation, and prepare de-identified evidence for peer discussion."
@@ -24,10 +24,10 @@
       <span>Clinical Token User Stories</span>
     </a>
     <nav class="toc-jump">
-      <a href="#problem">Problem</a>
       <a href="#users">Users</a>
+      <a href="#problem">Problem</a>
       <a href="#modalities">Modalities</a>
-      <a href="#agents">Agents</a>
+      <a href="#agents">AI agents</a>
       <a href="#finding">Finding</a>
       <a href="#demo-discover">Demo</a>
       <a href="#publish">Publish</a>
@@ -36,16 +36,29 @@
 
   <main class="article">
     <p class="eyebrow">User story · Cross-modal correlation</p>
-    <h1>When Downward Eye Movement Count in Optokinetic (OPK) Test meets NeckCare Butterfly scores</h1>
+    <h1>When downward eye movement count in optokinetic (OPK) test meets NeckCare Butterfly scores</h1>
     <p class="lede">
       At a neuro-optometry and vestibular performance clinic, clinicians already
       captured rich eye-movement and cervical sensorimotor data. What they lacked
       was integration across modalities: Cognuro VNG/OPK and NeckCare cervical
       measures lived in separate workflows and systems, so teams rarely got an
-      integrated signal for clinical reasoning. Clinical Token agents connected
+      integrated signal for clinical reasoning. Clinical Token AI agents connected
       those modalities with clinician approval at each step, then prepared
       de-identified evidence for peer discussion on the Evidence Exchange.
     </p>
+
+    <section id="users">
+      <h2>Who this story is about</h2>
+      <p>
+        The users are clinicians in a <strong>neuro-optometry and vestibular
+        performance</strong> setting: doctors and clinical staff who evaluate
+        balance, dizziness, concussion-related symptoms, and visual-vestibular
+        performance. Day to day they order and review eye-movement testing
+        alongside cervical assessments. They are not data engineers. They need
+        the clinic’s own multimodal archive to stay useful without exporting
+        patient identity into a research warehouse.
+      </p>
+    </section>
 
     <section id="problem">
       <p class="problem-kicker">The problem</p>
@@ -68,23 +81,6 @@
           locked silo.
         </p>
       </div>
-    </section>
-
-    <section id="users">
-      <h2>Who this story is about</h2>
-      <p>
-        The users are clinicians in a <strong>neuro-optometry and vestibular
-        performance</strong> setting: doctors and clinical staff who evaluate
-        balance, dizziness, concussion-related symptoms, and visual-vestibular
-        performance. Day to day they order and review eye-movement testing
-        alongside cervical assessments. They are not data engineers. They need
-        the clinic’s own multimodal archive to stay useful without exporting
-        patient identity into a research warehouse.
-      </p>
-      <p>
-        Clinic identity stays private in this writeup. The story is about the
-        workflow and the evidence pattern, not a named practice brand.
-      </p>
     </section>
 
     <section id="modalities">
@@ -134,12 +130,12 @@
     <section id="agents">
       <h2>How agentic AI helped the clinical workflow</h2>
       <p>
-        Clinicians stayed in the loop. Agents proposed plans, waited for
-        approval, then executed. The sequence looked like this:
+        Clinicians stayed in the loop. Clinical Token AI agents proposed plans,
+        waited for approval, then executed. The sequence looked like this:
       </p>
       <ol>
         <li>
-          <strong>Inventory.</strong> Agents scanned available clinic data for
+          <strong>Inventory.</strong> AI agents scanned available clinic data for
           the relevant modalities, so the team could see what was present before
           any analysis.
         </li>
@@ -149,7 +145,7 @@
           NeckCare metrics could be compared without manual spreadsheet joins.
         </li>
         <li>
-          <strong>Cross-connect patients.</strong> Agents identified the cohort
+          <strong>Cross-connect patients.</strong> AI agents identified the cohort
           that had <em>both</em> Cognuro OPK/VNG measurements and NeckCare
           cervical measures, the only patients for whom a true cross-modal link
           is meaningful.
@@ -157,10 +153,11 @@
         <li>
           <strong>Correlate.</strong> Across modalities and metrics (OPK
           directions and counts, Butterfly and related NeckCare scores, and
-          other cervical measures), agents ranked relationships and surfaced the
-          strongest signals for clinician review.
+          other cervical measures), AI agents ranked relationships and surfaced
+          the strongest signals for clinician review.
         </li>
       </ol>
+      <p class="section-promise">Less Admin. More Care.</p>
       <p>
         That is the practical promise: not replacing clinical judgment, but
         removing the days of inventory, join logic, and exploratory plotting so
@@ -171,8 +168,8 @@
     <section id="finding">
       <h2>The finding</h2>
       <p>
-        In the dual-modality cohort, the most significant correlation the agents
-        highlighted was between:
+        In the dual-modality cohort, the most significant correlation the AI
+        agents highlighted was between:
       </p>
       <ul>
         <li>
@@ -189,19 +186,18 @@
       <p>
         Clinically, that pairing is suggestive: stronger oculomotor response to
         downward OPK stimulation co-occurring with reduced eye-head-neck
-        coordination on Butterfly. The agents did not invent a diagnosis. They
+        coordination on Butterfly. The AI agents did not invent a diagnosis. They
         made the cohort and the correlation inspectable so clinicians could
         enlarge the figure, challenge the join, and decide what to do next.
       </p>
     </section>
 
     <section id="demo-discover">
-      <h2>Watch: agents find the evidence</h2>
+      <h2>Watch: AI agents find the evidence</h2>
       <p>
-        The walkthrough below follows Token Center as agents inventory data,
-        validate, run cross-modal correlation with clinician approval, and open
-        the OPK vertical downward versus Butterfly figure. Same cut also lives at
-        <a href="https://clinicaltoken.com/watch/3">clinicaltoken.com/watch/3</a>.
+        The walkthrough below follows Token Center as Clinical Token AI agents
+        inventory data, validate, run cross-modal correlation with clinician
+        approval, and open the OPK vertical downward versus Butterfly figure.
       </p>
       <div class="player">
         <iframe
@@ -215,11 +211,23 @@
 
     <section id="publish">
       <h2>Next: publish de-identified evidence for peer discussion</h2>
+      <p class="section-promise">Closer clinicians. Stronger evidence. Shared value.</p>
       <p>
-        Once clinicians trust a finding, the next step is sharing it safely with
-        other clinicians: a de-identified evidence card on the Clinical Token
-        Evidence Exchange, where peers can review the case pattern, discuss
-        interpretation, and compare notes without exposing patient identity.
+        Once clinicians trust a finding, Clinical Token AI agents help package it
+        as de-identified evidence for the Clinical Token Evidence Exchange, a
+        secure, HIPAA-aligned network for professional collaboration. Peers can
+        review the case pattern, discuss interpretation, and compare notes
+        without exposing patient identity. Clinics can also participate in
+        responsible value exchange around real-world clinical intelligence,
+        keeping PHI off the shared surface.
+      </p>
+      <p>
+        Our vision is simple: bring clinicians closer to clinicians, clinicians
+        closer to patients through better-informed care conversations, and
+        medtech and other healthcare partners into one trusted evidence layer.
+        The Exchange supports peer learning and professional judgment. It does
+        not replace the clinician, and it is not offered as a diagnostic device
+        claim.
       </p>
       <p>
         <strong>Video demo 5</strong> will show how quickly that publish flow
