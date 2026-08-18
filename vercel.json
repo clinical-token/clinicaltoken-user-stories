@@ -1,6 +1,18 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/user-stories/evidence-exchange-monetize-deidentified-findings",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/user-stories/evidence-exchange-monetize-deidentified-findings/:path*",
+      "destination": "/",
+      "permanent": false
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
