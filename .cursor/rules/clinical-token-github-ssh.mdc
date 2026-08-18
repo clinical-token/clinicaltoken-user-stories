@@ -1,0 +1,14 @@
+---
+description: Use the correct GitHub SSH host for Clinical Token repos
+alwaysApply: true
+---
+
+# Clinical Token GitHub SSH
+
+For Clinical Token GitHub repositories, use the Clinical Token GitHub SSH identity, not the GitLab key.
+
+- Preferred SSH host alias: `github-clinicaltoken`
+- SSH key: `~/.ssh/id_rsa_github_joe_clinical_token`
+- Example clone URL: `git@github-clinicaltoken:clinical-token/<repo>.git`
+
+Do not use `~/.ssh/id_rsa_joe_xing_ai_gitlab` for GitHub Clinical Token repos.
