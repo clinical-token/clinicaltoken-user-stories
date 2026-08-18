@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OPK downward counts and NeckCare Butterfly scores · Clinical Token User Stories</title>
+  <meta
+    name="description"
+    content="How agentic AI helped a neuro-optometry clinic inventory multimodal data, link Cognuro OPK with NeckCare Butterfly scores, and prepare de-identified evidence for peer discussion."
+  />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/assets/user-stories.css" />
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="/">
+      <img class="mark" src="/assets/icon-deep.svg" width="28" height="28" alt="" />
+      <span>Clinical Token User Stories</span>
+    </a>
+    <nav class="toc-jump">
+      <a href="#users">Users</a>
+      <a href="#modalities">Modalities</a>
+      <a href="#agents">Agents</a>
+      <a href="#finding">Finding</a>
+      <a href="#demo-discover">Demo</a>
+      <a href="#publish">Publish</a>
+    </nav>
+  </header>
+
+  <main class="article">
+    <p class="eyebrow">User story · Cross-modal correlation</p>
+    <h1>When OPK downward counts meet NeckCare Butterfly scores</h1>
+    <p class="lede">
+      At a neuro-optometry and vestibular performance clinic, clinicians already
+      captured rich eye-movement and cervical sensorimotor data. What they lacked
+      was a practical way to inventory that archive, project different
+      modalities into one analysis space, and surface correlations that matter
+      for care. Clinical Token agents did that work with clinician approval at
+      each step, then set up de-identified evidence for peer discussion on the
+      Evidence Exchange.
+    </p>
+
+    <section id="users">
+      <h2>Who this story is about</h2>
+      <p>
+        The users are clinicians in a <strong>neuro-optometry and vestibular
+        performance</strong> setting: doctors and clinical staff who evaluate
+        balance, dizziness, concussion-related symptoms, and visual-vestibular
+        performance. Day to day they order and review eye-movement testing
+        alongside cervical assessments. They are not data engineers. They need
+        the clinic’s own multimodal archive to stay useful without exporting
+        patient identity into a research warehouse.
+      </p>
+      <p>
+        Clinic identity stays private in this writeup. The story is about the
+        workflow and the evidence pattern, not a named practice brand.
+      </p>
+    </section>
+
+    <section id="modalities">
+      <h2>Two modalities, one patient story</h2>
+
+      <h3>Cognuro: VNG, OPK, and nystagmus metrics</h3>
+      <p>
+        <strong>Cognuro</strong> provides neurotechnology for objective eye-movement
+        and related measurements. Through VNG-style capture, clinicians record
+        tasks such as gaze, pursuit, saccades, and
+        <strong>optokinetics (OPK)</strong>, including vertical directions.
+        OPK presents moving visual stimuli (for example, striped targets) and
+        measures how the eyes respond. Metrics include nystagmus-like motion
+        patterns and counts that summarize how strongly the oculomotor system
+        follows those stimuli.
+      </p>
+
+      <h3>NeckCare: range of motion, joint position error, and Butterfly</h3>
+      <p>
+        <strong>NeckCare</strong> assesses cervical function with objective
+        sensor-based tests. Typical measures include:
+      </p>
+      <ul>
+        <li><strong>Range of motion</strong>, how far and freely the neck moves.</li>
+        <li>
+          <strong>Joint position error (JPE)</strong>, proprioception: can the
+          patient return the head accurately to a remembered neutral after
+          movement.
+        </li>
+        <li>
+          <strong>Butterfly Test</strong>, cervical sensorimotor control and
+          movement sense. The patient tracks a moving visual target with
+          head-and-neck motion while a head-worn sensor records accuracy.
+          Scores summarize deviation from the target, time on target, and whether
+          the patient leads or lags. Poorer Butterfly performance is associated
+          with impaired eye-head-neck coordination, often discussed in neck pain,
+          whiplash, concussion, and dizziness contexts.
+        </li>
+      </ul>
+      <p>
+        In other words, Butterfly is not “just flexibility.” It quantifies how
+        well neck sensorimotor control keeps the head synchronized with a
+        dynamic visual path.
+      </p>
+    </section>
+
+    <section id="agents">
+      <h2>How agentic AI helped the clinical workflow</h2>
+      <p>
+        Clinicians stayed in the loop. Agents proposed plans, waited for
+        approval, then executed. The sequence looked like this:
+      </p>
+      <ol>
+        <li>
+          <strong>Inventory.</strong> Agents scanned available clinic data for
+          the relevant modalities, so the team could see what was present before
+          any analysis.
+        </li>
+        <li>
+          <strong>Normalize and project.</strong> Different vendor exports and
+          schemas were brought into a shared analysis space so Cognuro and
+          NeckCare metrics could be compared without manual spreadsheet joins.
+        </li>
+        <li>
+          <strong>Cross-connect patients.</strong> Agents identified the cohort
+          that had <em>both</em> Cognuro OPK/VNG measurements and NeckCare
+          cervical measures, the only patients for whom a true cross-modal link
+          is meaningful.
+        </li>
+        <li>
+          <strong>Correlate.</strong> Across modalities and metrics (OPK
+          directions and counts, Butterfly and related NeckCare scores, and
+          other cervical measures), agents ranked relationships and surfaced the
+          strongest signals for clinician review.
+        </li>
+      </ol>
+      <p>
+        That is the practical promise: not replacing clinical judgment, but
+        removing the days of inventory, join logic, and exploratory plotting so
+        clinicians can spend time on interpretation and care planning.
+      </p>
+    </section>
+
+    <section id="finding">
+      <h2>The finding</h2>
+      <p>
+        In the dual-modality cohort, the most significant correlation the agents
+        highlighted was between:
+      </p>
+      <ul>
+        <li>
+          <strong>OPK vertical downward</strong> visual stimuli (moving striped
+          targets in the downward direction), associated with
+          <strong>higher nystagmoid motion pattern counts</strong> on Cognuro
+          eye-movement testing, and
+        </li>
+        <li>
+          <strong>worse NeckCare Butterfly scores</strong>, indicating poorer
+          cervical sensorimotor tracking performance.
+        </li>
+      </ul>
+      <p>
+        Clinically, that pairing is suggestive: stronger oculomotor response to
+        downward OPK stimulation co-occurring with reduced eye-head-neck
+        coordination on Butterfly. The agents did not invent a diagnosis. They
+        made the cohort and the correlation inspectable so clinicians could
+        enlarge the figure, challenge the join, and decide what to do next.
+      </p>
+    </section>
+
+    <section id="demo-discover">
+      <h2>Watch: agents find the evidence</h2>
+      <p>
+        The walkthrough below follows Token Center as agents inventory data,
+        validate, run cross-modal correlation with clinician approval, and open
+        the OPK vertical downward versus Butterfly figure. Same cut also lives at
+        <a href="https://clinicaltoken.com/watch/3">clinicaltoken.com/watch/3</a>.
+      </p>
+      <div class="player">
+        <iframe
+          title="Clinical Token Agentic AI Clinical Workflow — OPK vs NeckCare"
+          src="https://player.vimeo.com/video/1218820561?h=d9960abb94&title=0&byline=0&portrait=0&dnt=1"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <section id="publish">
+      <h2>Next: publish de-identified evidence for peer discussion</h2>
+      <p>
+        Once clinicians trust a finding, the next step is sharing it safely with
+        other clinicians: a de-identified evidence card on the Clinical Token
+        Evidence Exchange, where peers can review the case pattern, discuss
+        interpretation, and compare notes without exposing patient identity.
+      </p>
+      <p>
+        <strong>Video demo 5</strong> will show how quickly that publish flow
+        works from the clinic side. Recording and embed land here when ready.
+      </p>
+      <div class="player player-soon" id="demo-publish">
+        <div class="soon-card">
+          <span class="soon-eyebrow">Coming soon</span>
+          <strong>Video demo 5 · Publish to Evidence Exchange</strong>
+          <p>
+            Clinicians publish the OPK–Butterfly evidence as a de-identified
+            listing, invite peer discussion, and keep PHI out of the shared
+            surface.
+          </p>
+          <p class="soon-link">
+            Placeholder for
+            <a href="https://clinicaltoken.com/watch/5">clinicaltoken.com/watch/5</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="takeaway">
+      <h2>Takeaway</h2>
+      <p>
+        Multimodal clinics already generate the measurements. Agentic workflows
+        make those measurements discoverable across vendors, joinable across
+        patients who truly have both modalities, and discussable as
+        de-identified evidence. For this neuro-optometry and vestibular
+        performance clinic, that meant moving from siloed Cognuro and NeckCare
+        exports to a clear OPK downward versus Butterfly correlation, ready for
+        clinical review and, next, peer exchange.
+      </p>
+    </section>
+
+    <p class="foot">
+      <a href="/">All user stories</a>
+      · Clinical Token Inc. · userstories.clinicaltoken.com
+    </p>
+  </main>
+</body>
+</html>
