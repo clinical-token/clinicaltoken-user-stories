@@ -337,13 +337,6 @@ a:hover { text-decoration: underline; }
   font-size: 14px !important;
 }
 
-.problem-slide {
-  width: min(1120px, calc(100vw - 48px));
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 .problem-kicker {
   font-size: 12px !important;
   font-weight: 700 !important;
@@ -353,16 +346,9 @@ a:hover { text-decoration: underline; }
   margin: 20px 0 10px !important;
 }
 
-.problem-layout {
-  display: grid;
-  grid-template-columns: minmax(240px, 340px) minmax(0, 1fr);
-  gap: clamp(20px, 3vw, 40px);
-  align-items: center;
-}
-
 .problem-title {
   font-family: var(--font-display);
-  font-size: clamp(28px, 3.4vw, 40px) !important;
+  font-size: clamp(28px, 4vw, 36px) !important;
   font-weight: 600 !important;
   letter-spacing: -0.03em;
   line-height: 1.12 !important;
@@ -377,18 +363,8 @@ a:hover { text-decoration: underline; }
   font-size: 17px !important;
   font-weight: 600;
   color: var(--ink) !important;
-  max-width: 34ch;
+  max-width: 40ch;
   margin-bottom: 12px !important;
-}
-
-.problem-rule {
-  border: 0;
-  border-top: 1px solid var(--line);
-  margin: 0 0 14px;
-}
-
-.problem-copy p {
-  max-width: 34ch;
 }
 
 .problem-callout {
@@ -403,181 +379,10 @@ a:hover { text-decoration: underline; }
   margin: 0 !important;
   font-size: 15px !important;
   line-height: 1.5 !important;
-  max-width: none;
 }
 
 .problem-callout strong {
   color: var(--blue);
-}
-
-.frag-figure {
-  margin: 0;
-}
-
-.frag-icons {
-  position: absolute;
-  width: 0;
-  height: 0;
-  overflow: hidden;
-}
-
-.frag-hub-wrap {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 420px;
-  padding: 8px 0;
-}
-
-.frag-wires {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: min(712px, 100%);
-  height: auto;
-  aspect-ratio: 712 / 502;
-  z-index: 1;
-  overflow: visible;
-  pointer-events: none;
-}
-
-.frag-hub-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  grid-template-rows: repeat(3, minmax(104px, auto));
-  gap: clamp(10px, 1.6vw, 18px);
-  width: min(640px, 100%);
-  position: relative;
-  z-index: 2;
-}
-
-.frag-hub-card {
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  padding: 12px 12px 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  justify-content: center;
-  box-shadow: 0 8px 24px rgba(11, 31, 51, 0.06);
-}
-
-.frag-hub-card .ic {
-  width: 22px;
-  height: 22px;
-  flex: 0 0 auto;
-}
-
-.frag-hub-card .t {
-  font-size: clamp(12px, 1.5vw, 15px);
-  font-weight: 700;
-  line-height: 1.25;
-  color: var(--ink);
-}
-
-.frag-hub-card .bars {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.frag-hub-card .bars i {
-  display: block;
-  height: 3px;
-  border-radius: 2px;
-  background: rgba(13, 71, 161, 0.18);
-}
-
-.frag-hub-spacer {
-  visibility: hidden;
-}
-
-.frag-hub-center {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: clamp(118px, 18vw, 168px);
-  height: clamp(118px, 18vw, 168px);
-  border-radius: 50%;
-  border: 2px solid rgba(198, 40, 40, 0.55);
-  background: radial-gradient(circle, rgba(198, 40, 40, 0.12), rgba(255, 255, 255, 0.92) 72%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  z-index: 3;
-  box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.85);
-  text-align: center;
-}
-
-.frag-hub-center b {
-  color: #c62828;
-  font-size: clamp(13px, 1.8vw, 18px);
-  font-weight: 800;
-  line-height: 1.15;
-}
-
-.frag-warn-ic {
-  width: 26px;
-  height: 26px;
-  color: #c62828;
-}
-
-@media (max-width: 900px) {
-  .problem-slide {
-    width: auto;
-    left: auto;
-    transform: none;
-  }
-
-  .problem-layout {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-}
-
-@media (max-width: 560px) {
-  .frag-wires {
-    display: none;
-  }
-
-  .frag-hub-wrap {
-    min-height: 0;
-    display: block;
-  }
-
-  .frag-hub-center {
-    position: relative;
-    left: auto;
-    top: auto;
-    transform: none;
-    width: 100%;
-    height: auto;
-    border-radius: 14px;
-    margin-bottom: 12px;
-    padding: 16px;
-    flex-direction: row;
-    gap: 10px;
-    box-shadow: none;
-  }
-
-  .frag-hub-center b {
-    text-align: left;
-  }
-
-  .frag-hub-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows: none;
-  }
-
-  .frag-hub-spacer {
-    display: none;
-  }
 }
 
 @media (max-width: 640px) {
